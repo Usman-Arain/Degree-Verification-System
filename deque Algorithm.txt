@@ -1,0 +1,22 @@
+1. Initialize a queue (let's call it "Queue") to store new degree verification application with required documents.
+	i. Push new applications in Queue.
+
+2. Initialize an empty deque (let's call it "Deque") to process the applications.
+
+3. While there are applications in the Queue:
+   a. Repeat the following until Queue is empty:
+      i.   pop the current applications from the front of Queue and push to the rear of the Deque. set Queue (front + 1)
+      ii.  Use a verification method to check if all the required documents are available in the Deque.
+      iii. If all documents are available:
+            1. Set Deque (Rear + 1) to move to the next location to store the next document.
+      	   else (required document is missing:)
+            1. Delete the current document and repeat the process.
+
+4. Repeat the following until Deque is empty:
+   a. Perform the degree verification procedure on current application in the Deque.
+   b. If the degree is verified:
+      i.   Generate a degree certificate for the student and move it to another queue (RecordQueue) to keep the record.
+      iii. set Deque (front + 1)
+
+5. The RecordQueue now contains all the verified degree applications along with their degree certificates, ready for students to collect.
+
