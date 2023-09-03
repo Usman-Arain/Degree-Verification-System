@@ -1,6 +1,6 @@
 # Degree_Verification_System
 
-Overview:
+Overview: 
 The Degree Verification System is a Python program that simulates the processing of degree verification applications with required documents. The core feature of this system is its use of a double-ended queue (deque) to efficiently manage the applications, allowing for insertion at one end and removal from both ends of the deque.
 
 Key Features:
