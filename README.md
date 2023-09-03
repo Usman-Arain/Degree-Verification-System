@@ -1,9 +1,9 @@
 # Degree_Verification_System
 
-Overview
+Overview:
 The Degree Verification System is a Python program that simulates the processing of degree verification applications with required documents. The core feature of this system is its use of a double-ended queue (deque) to efficiently manage the applications, allowing for insertion at one end and removal from both ends of the deque.
 
-Key Features
+Key Features:
 Application Queue: Applications are added to a queue, representing new degree verification applications with required documents.
 
 Deque for Processing: An empty deque is used to process the applications. Deque allows for efficient insertion at the rear and removal from both the front and rear, making it ideal for this application.
@@ -14,7 +14,7 @@ Degree Verification: Applications with all required documents undergo a degree v
 
 Record Queue: Verified applications and their degree certificates are placed in a separate queue (RecordQueue) for record-keeping.
 
-Algorithm Steps
+Algorithm Steps:
 Initialize a queue (Queue) for new degree verification applications.
 Initialize an empty deque (Deque) for processing applications.
 While there are applications in Queue:
@@ -25,11 +25,13 @@ Repeat until Deque is empty:
 a. Perform degree verification on the current application in Deque.
 b. If verified, generate a degree certificate and move it to RecordQueue.
 RecordQueue contains all verified degree applications along with their degree certificates.
-Usage
+
+Usage:
 Modify the code to handle your specific document and degree verification logic.
 Execute the Python script.
 The RecordQueue will contain all verified degree applications and certificates.
-Benefits
+
+Benefits:
 Efficient processing with a double-ended queue (deque).
 Maintain records of verified degree applications and certificates.
 Customizable for different document and degree verification requirements.
